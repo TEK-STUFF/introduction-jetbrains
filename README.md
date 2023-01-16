@@ -94,7 +94,58 @@ Tous ces modes de lancement sont accessibles en haut à droite de l'interface, �
 
 Le lancement de votre programme en mode debug permettra de tenir compte des points d'arrêts que vous aurez placés dans votre code.
 
+![debugging](./images/breakpoints.png)
+
 > **Note :** Attention, si vous ne lancez pas votre programme en mode debug, les points d'arrêts ne seront pas pris en compte.
 
 La mise en place d'un point d'arrêt permet de stopper l'exécution de votre programme à un endroit précis, afin de pouvoir visualiser les variables, les appels de fonctions, etc.
 Depuis la fenêtre de débogage, il vous sera possible de faire avancer votre programme pas à pas, de rentrer dans les fonctions appelées et de réaliser tout un tas d'autres actions.
+
+![debugging](./images/debug-console.png)
+
+Ci-dessus, nous pouvons voir que nous sommes dans la fonction `main`, que la variable 'i' vaut 16, que notre Vecteur est de taille 16, etc.
+
+# 
+
+Clion est un IDE très complet, je n'ai pas le temps ni les connaissances pour vous présenter la totalité de ses fonctionnalités, mais je vous invite à vous y plonger et à vous familiariser avec cet outil vraiment puissant.
+
+#
+
+## Pycharm
+
+Pycharm est un IDE dédié au développement en Python. Il propose également un linting, un débogueur, etc.
+La structure globale de l'IDE est la même que celle de CLion, mais il est possible de faire quelques différences. 
+
+Par exemple, il est possible de créer un projet en utilisant le système de gestion de paquets de Python (pipenv, poetry, etc.).
+
+La seule configuration nécessaire sera la configuration de l'interpréteur Python, qui peut être fait en cliquant sur le bouton 'Configure' en bas à droite de l'interface. Pour les utilisateurs de Windows, il est possible de sélectionner l'interpréteur Python de votre système, ou bien de sélectionner un interpréteur Python installé dans votre environnement WSL. Je vous recommande de créer deux profils d'interpréteurs, un pour votre système Windows et un pour votre environnement WSL.
+
+![pycharm](./images/pycharm.png)
+
+(je n'ai pas le même thème que sur Clion, mais vous pouvez voir que la structure est la même)
+
+### Linting
+
+Le linting est activé par défaut, il est possible de le désactiver dans les paramètres de l'IDE.
+
+Celui-ci est basé sur le linter Pylint, qui est un linter très complet et très puissant. Il vous permettra de formatter votre code en respectant les bonnes pratiques, de détecter les erreurs de syntaxe, les erreurs de logique, les erreurs de style, etc.
+
+### Debugging
+
+Le débogueur est également activé par défaut, et contrairement à CLion, il est possible de lancer votre programme en mode debug directement depuis l'éditeur de code, sans configuration préalable.
+
+La seule contrainte est la configuration de l'interpréteur Python, comme nous l'avons vu précédemment.
+
+Vous pouvez également créer des configurations de lancement personnalisées, par exemple pour lancer votre programme avec des arguments, des variables d'environnement spécifiques, etc.
+
+#
+
+## Conclusion
+
+Nous avons vu dans ce workshop comment installer et configurer CLion et Pycharm, deux IDE très puissants et très complets, qui vous permettront de développer en C++ et en Python de manière très efficace.
+
+J'espère que ces outils vous seront utiles, et que vous prendrez plaisir à les utiliser. N'hésitez pas à me contacter si vous avez des questions ou des remarques.
+
+#
+
+(n'oubliez pas de star le repo, ça fait toujours plaisir 😉 )
